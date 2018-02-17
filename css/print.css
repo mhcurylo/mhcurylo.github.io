@@ -1,0 +1,8 @@
+@media print {
+  #bckg {
+    height: 0px !important;
+    display: none !important;
+  }
+}
+
+

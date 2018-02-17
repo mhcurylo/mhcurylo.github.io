@@ -1,92 +1,111 @@
-#Mateusz Curylo
+# Mateusz Curylo
 
-* email: mhcurylo-at-gmail-dot-com
-* phone: 07840829296
-
+* Email: mateusz.curylo@protonmail.com
+* blog: [www.oxhouseclub.com](https://oxhouseclub.com)
 * github: [mhcurylo](https://github.com/mhcurylo)
-* twitter: [@mhcurylo](https://twitter.com/mhcurylo)
+* linkedin: [mhcurylo](www.linkedin.com/in/mhcurylo)
+
 
 ## Personal summary
 
-I am a polyglot programmer with a background in philosophy of media and computing.
-My experience ranges from writing AngularJS/Cordova mobile aps for my own startup, through cooperating on large Angular/TypeScript/Redux projects to using Ansible scripts to ship Dataflows to Google cloud. 
-Currently, when not concerned with Apache Beam/Big Query stories, I lead internal TypeScript/Functional Programming workshops or fill in a release.
+I am a polyglot functional programmer and enterprise software developer with a background in the philosophy of media and computing.
 
-In my spare time I love learning new languages, experimenting with frontend stacks and participating in JavaScript game jams.
+I have commercial full-stack experience designing and developing distributed web applications written in Haskell, Purescript, Java and TypeScript utilising agile methodologies, continuous integration and continuous deployment to Kubernetes clusters.
 
-On my github you might find experiments with technologies such as Clojure/ClojureScript/DataScript, React/Redux/Immutable.js and Haskell.
+I solve business problems involving transformations of data. At the heart of what I do is understanding and communicating the flow, shape, content and consistency of data. I believe the code expressing the transformations should be well-typed, tested, efficient and malleable.
+
+I have a keen interest in systems theory, company structures and the ability of teams and individuals to innovate, induce change and combat organisational inertia. I believe in continuous improvement of processes by both following rules and pondering them.
+
+In my spare time, I like to play some Go, read a book, write a blog post, do some research or try out a new programming language. I have got a basic competence in Clojure, Idris, Kotlin, Scala and WebGL.
+
 
 ## Technical Profile
 
-* TDD (Jasmine, JUnit, HUnit)
-* BDD (Mocha/Chai with Cucumber.js/gherkin)
-* Property Testing (vavr.io, QuickCheck)
-* Reactive Functional Programming (RxJava, RxJs)
-* Category Theory Functional Programming (Haskell, vavr.io for Java, fantasy-land spec for JS)
-* Big data streaming (Apache Beam)
-* CSS frameworks and preprocessors (Bootstrap, Jeet, Axis, SCSS, Less, Stylus)
-* Frontend languages and frameworks (JavaScript, TypeScript, AngularJS, Angular, React)
-* Frontend build systems (webapack, angular cli, fuse-box)
-* Frontend linting (JSLint, TSLint, ESLint)
-
-## Soft skills
-
-* Agile (SCRUM, cooperating with stakeholders to get stuff done)
-* Public speaking (teaching devs and philosophy undergraduates, presenting, leading workshops)
-* Reading (as a former philosopher, I can read like a pro)
+* Haskell microservices using Servant / Lenses / Higgledy / Barbie / Refined / postgresql-simple / wai as well as Template Haskell / Generic programming, CQRS and Event Sourcing
+* Functional frontend experience with Purescript / React / Redux / Lenses, as well as Typescript / Angular / Redux / RxJS and React / React Hooks / fp-ts / fp-ts-io / Material-ui stacks
+* Java microservices with Spring, OOP and Design Patterns.
+* SQL (MySql and PostgreSQL) and Non-SQL (MongoDB) databases
+* Big data streaming and processing in Google Cloud (Pub-Sub, Apache Beam, BigQuery)
+* Data processing and visualisation in Haskell (Conduit, vector, containers, unordered-containers, GraphViz)
+* Deploying, monitoring, troubleshooting and tuning Docker and Kubernetes microservices in production using Prometheus / Grafana
+* Continous Integration and Deployment (Buildkite, Agrocd, GoCD, SonarQube, Ansible)
+* Extensive testing experience in backend and frontend (including unit, integration, contract, e2e and property testing)
+* Micro benchmarking and e2e performance testing and improvement using JMeter/JMH for Java and criterion/apib with Haskell
+* Fundamentals of category theory inspired functional programming (Haskell, vavr.io for Java, fp-ts for TypeScript)
 
 
 ## Career History
 
+### Habito
+
+June 2019 - Present
+
+Haskell Engineer
+
+- A proud member of the team leading the charge to detach core internal systems from a monolith called Engine. Along the way, we have moved from Haskell/Spock to Haskell/Servant, from Purescript/React/Redux to Typescript/React/Hooks.
+- Developing frontend and backend parts of a microservices system spanning across multiple REST Haskell/Servant backends, Conduit data pipelines and React/Typescript frontends, utilising PostgreSQL with CQRS and Event Sourcing. The system is build using Bazel/NixOS/Buildkite and delivered to Kubernetes cluster via GitOps/AggroCD. Our team sets up new standards in defining and testing contracts between services across the whole company.
+- Lead a push for increase runtime awareness and improving build systems and Kubernetes deployments leading to enhancing the top 95th response time of detached services by order of magnitude as well as improving the performance of the old monolith system in 95th percentile by a factor of five. The improvements lead to saving tens of hours for both operations as well as our end users. The research led to internal workshops and Haskell eXchange 2020 talk.
+- Advocating for and participating in the company transition from PureScript to TypeScript, as well as setting up code standards and best practises (including FE unit testing) in the team.
+- Increased the performance of Conduit pipelines fivefold by introducing concurrency guaranteeing much faster failure recovery of the mission-critical system.
+- Improved multiple old systems either by introducing data-driven unit testing, compile-time checks or increasing performance.
+- Leading agile ceremonies and presenting the team accomplishments on department meetings.
+
 ### Gamesys Limited
 
-March 2016 - Present
+January 2017 - June 2019
 
-Java/Apache Beam/Google Cloud/vavr.io, Ansible, TypeScript/Angular2/RxJS/NgRxStore (Redux), React/Redux/DataScript, Mocha/Chai/Cucumber
+Fullstack developer
 
-Polyglot fullstack developer
+- Cooperated with TAs and PO on the design and implemented a financial data aggregation strategy using PubSub/Apache Beam/BigQuery/vavr.io.
+- Introduced immutability, functional error handling, IO/pure function splitting and applicative validation to improve the reliability of Apache Beam projects.
+- Worked on a Spring/Java/Kubernetes core microservices system delivered as a set of Docker images via GoCD/Ansible to Kubernetes cluster.
+- Practised TDD with JUnit, E2E and performance testing of the whole system.
+- Introduced Kotlin for succinct safe domain expression in mocks.
+- Lead multiple internal Functional Programming workshops on both TypeScript and Java.
 
- - cooperating with TAs and PO in design and implementation of data aggregation strategy using Java/Dataflow/BigQuery
- - worked in a full stack team to deliver an Angular/NgRx SPA for internal use
- - implemented testing framework using Mocha/Chai/Cucumber
- - wrote prototypes of SPA in React/Redux/DataScript and Aurelia
- - leading internal workshops and functional programming meet-ups
+March 2016 - January 2017
 
+Frontend developer
+
+- Cooperated on an internal TypeScript/Angular2/RxJS SPA from the design phase to release.
+- Designed and showcased prototypes in both Aurelia and React/Redux/Datascript.
+- Introduced BDD testing using Mocha/Chai/Cucumber.b
+- Lead workshops on Functional Programming in JavaScript/TypeScript.
 
 ### Cometari Dedicated Solutions
 
 October 2015 - December 2015, contract
 
-GIT, Grunt, AngularJS, REST, OOP, SCSS, Bootstrap, Jeet, Svg
+Frontend JavaScript in a fast-paced Agile environment
 
-Frontend JavaScript in a fast paced Agile environment 
-
- - shipped SPA with AngularJS consuming RESTfull web services
- - designed and developed module for creating HTML complex input forms from JSONs with AngularJS, lodash and advanced prototyping methods
- - implemented dynamic and static pages based on wireframes with AngularJS/Bootstrap and AngularJS/Jeet
+- Shipped SPA with Javascript/AngularJS/lodash/SCSS build with Grunt consuming RESTfull Java web services.
+- Designed and developed a module for creating HTML complex input forms from JSON with AngularJS, lodash and JavaScript prototyping methods.
+- Implemented dynamic and static pages based on wireframes with AngularJS/Bootstrap and AngularJS/Jeet.
 
 ### Heartland Games
 
-October 2014 - October 2015, self-founded
-
-AngularJS, WebAudio, Cordova, Crosswalk, Less, Bootstrap, OOP, Svg, Canvas
+October 2014 - October 2015, self-funded
 
 Game designer/Game developer/Founder
 
- - designed and developed an AngularJS/Cordova game for mobile
- - integrated Cordova plugins to Angular app including analytic, in-app billing and admob
- - shipped AngularJS/Cordova mobile game
- - designed and developed promotional web page
+- Designed, developed and shipped an AngularJS/Cordova game for mobile utilising SVG/WebAudio/Crosswalk.
+- Integrated Cordova plugins to Angular app including analytic, in-app billing and AdMob.
+- Designed, developed and delivered a promotional web page using Less/Bootstrap/SVG.
+
 
 ## Education
 
 MA Philosophy, Jagiellonian University
 
-Releant coursework: Philosophy of Information, Introduction to Logic with Set Theory
+Relevant coursework: Philosophy of Information, Introduction to Logic with Set Theory
 
-## Other
 
- - I have worked as teaching assistant on Jagiellonian University and as a lecturer on Academia Ignatianum in Cracow, teaching courses like _Aesthetics of Electronic Age_, _Arts and Aesthetics in XXI Century_ and _Philosophy of the web II_.
- - I have made a one button twitter interface
- - I beat Dark Souls
+## Trivia
+
+-  As a PhD student in Philosophy, I have worked as a teaching assistant on Jagiellonian University and as a lecturer on Academia Ignatianum in Cracow, teaching courses titled _Aesthetics of Electronic Age_, _Arts and Aesthetics in XXI Century_ and _Philosophy of the web II_.
+- I love FromSoftware games, ultrafinitism and flat files.
+
+
+
+
 
