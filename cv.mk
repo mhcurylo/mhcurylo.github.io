@@ -3,7 +3,7 @@
 * Email: mateusz.curylo@protonmail.com
 * blog: [www.oxhouseclub.com](https://oxhouseclub.com)
 * github: [mhcurylo](https://github.com/mhcurylo)
-* linkedin: [mhcurylo](www.linkedin.com/in/mhcurylo)
+* linkedin: [mhcurylo](https://www.linkedin.com/in/mhcurylo)
 
 
 ## Personal summary
@@ -16,7 +16,7 @@ I solve business problems involving transformations of data. At the heart of wha
 
 I have a keen interest in systems theory, company structures and the ability of teams and individuals to innovate, induce change and combat organisational inertia. I believe in continuous improvement of processes by both following rules and pondering them.
 
-In my spare time, I like to play some Go, read a book, write a blog post, do some research or try out a new programming language. I have got a basic competence in Clojure, Idris, Kotlin, Scala and WebGL.
+In my spare time, I like to play some Go, read a book, write a [blog post](https://oxhouseclub.com), do some research, [prepare a talk](https://skillsmatter.com/skillscasts/14904-smash-you-some-haskell-on-a-minikube) or try out a new programming language. I have got a basic competence in Clojure, Idris, Kotlin, Scala and WebGL.
 
 
 ## Technical Profile
@@ -44,7 +44,7 @@ Haskell Engineer
 
 - A proud member of the team leading the charge to detach core internal systems from a monolith called Engine. Along the way, we have moved from Haskell/Spock to Haskell/Servant, from Purescript/React/Redux to Typescript/React/Hooks.
 - Developing frontend and backend parts of a microservices system spanning across multiple REST Haskell/Servant backends, Conduit data pipelines and React/Typescript frontends, utilising PostgreSQL with CQRS and Event Sourcing. The system is build using Bazel/NixOS/Buildkite and delivered to Kubernetes cluster via GitOps/AggroCD. Our team sets up new standards in defining and testing contracts between services across the whole company.
-- Lead a push for increase runtime awareness and improving build systems and Kubernetes deployments leading to enhancing the top 95th response time of detached services by order of magnitude as well as improving the performance of the old monolith system in 95th percentile by a factor of five. The improvements lead to saving tens of hours for both operations as well as our end users. The research led to internal workshops and Haskell eXchange 2020 talk.
+- Lead a push for increase runtime awareness and improving build systems and Kubernetes deployments leading to enhancing the top 95th response time of detached services by an order of magnitude as well as improving the performance of the old monolith system in 95th percentile by a factor of five. The improvements lead to saving tens of hours for both operations as well as our end users. The research led to internal workshops and Haskell eXchange 2020 talk.
 - Advocating for and participating in the company transition from PureScript to TypeScript, as well as setting up code standards and best practises (including FE unit testing) in the team.
 - Increased the performance of Conduit pipelines fivefold by introducing concurrency guaranteeing much faster failure recovery of the mission-critical system.
 - Improved multiple old systems either by introducing data-driven unit testing, compile-time checks or increasing performance.
@@ -102,10 +102,6 @@ Relevant coursework: Philosophy of Information, Introduction to Logic with Set T
 
 ## Trivia
 
--  As a PhD student in Philosophy, I have worked as a teaching assistant on Jagiellonian University and as a lecturer on Academia Ignatianum in Cracow, teaching courses titled _Aesthetics of Electronic Age_, _Arts and Aesthetics in XXI Century_ and _Philosophy of the web II_.
+- As a PhD student in Philosophy, I have worked as a teaching assistant on Jagiellonian University and as a lecturer on Academia Ignatianum in Cracow, teaching courses titled _Aesthetics of Electronic Age_, _Arts and Aesthetics in XXI Century_ and _Philosophy of the web II_.
 - I love FromSoftware games, ultrafinitism and flat files.
-
-
-
-
 
