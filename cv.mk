@@ -10,13 +10,13 @@
 
 I am a polyglot functional programmer and enterprise software developer with a background in the philosophy of media and computing.
 
-I have commercial full-stack experience designing and developing distributed web applications written in Haskell, Purescript, Java and TypeScript utilising agile methodologies, continuous integration and continuous deployment to Kubernetes clusters.
+I have commercial full-stack experience designing and developing microservices written in Haskell, Purescript, Java and TypeScript utilising domain driven design, agile methodologies, continuous integration and continuous deployment to Kubernetes clusters.
 
 I solve business problems involving transformations of data. At the heart of what I do is understanding and communicating the flow, shape, content and consistency of data. I believe the code expressing the transformations should be well-typed, tested, efficient and malleable.
 
 I have a keen interest in systems theory, company structures and the ability of teams and individuals to innovate, induce change and combat organisational inertia. I believe in continuous improvement of processes by both following rules and pondering them.
 
-In my spare time, I like to play some Go, read a book, write a [blog post](https://oxhouseclub.com), do some research, [prepare a talk](https://skillsmatter.com/skillscasts/14904-smash-you-some-haskell-on-a-minikube) or try out a new programming language. I have got a basic competence in Clojure, Idris, Kotlin, Scala and WebGL.
+In my spare time, I like to play some chess, read a book, write a [blog post](https://oxhouseclub.com), [do some research](https://skillsmatter.com/skillscasts/14904-smash-you-some-haskell-on-a-minikube) or try out a new programming language. I have got a basic competence in Clojure, Idris, Kotlin, Scala and WebGL.
 
 
 ## Technical Profile
@@ -28,9 +28,10 @@ In my spare time, I like to play some Go, read a book, write a [blog post](https
 * Big data streaming and processing in Google Cloud (Pub-Sub, Apache Beam, BigQuery)
 * Data processing and visualisation in Haskell (Conduit, vector, containers, unordered-containers, GraphViz)
 * Deploying, monitoring, troubleshooting and tuning Docker and Kubernetes microservices in production using Prometheus / Grafana
-* Continous Integration and Deployment (Buildkite, Agrocd, GoCD, SonarQube, Ansible)
+* Continous Integration and Deployment (Bazel, Buildkite, Agrocd, GoCD, SonarQube, Ansible)
 * Extensive testing experience in backend and frontend (including unit, integration, contract, e2e and property testing)
 * Micro benchmarking and e2e performance testing and improvement using JMeter/JMH for Java and criterion/apib with Haskell
+* Design of microservice systems to buisness specifications
 * Fundamentals of category theory inspired functional programming (Haskell, vavr.io for Java, fp-ts for TypeScript)
 
 
@@ -43,7 +44,7 @@ June 2019 - Present
 Haskell Engineer
 
 - A proud member of the team leading the charge to detach core internal systems from a monolith called Engine. Along the way, we have moved from Haskell/Spock to Haskell/Servant, from Purescript/React/Redux to Typescript/React/Hooks.
-- Developing frontend and backend parts of a microservices system spanning across multiple REST Haskell/Servant backends, Conduit data pipelines and React/Typescript frontends, utilising PostgreSQL with CQRS and Event Sourcing. The system is build using Bazel/NixOS/Buildkite and delivered to Kubernetes cluster via GitOps/AggroCD. Our team sets up new standards in defining and testing contracts between services across the whole company.
+- Developing frontend and backend parts of a microservices system spanning across multiple REST Haskell/Servant backends, Conduit data pipelines and React/Typescript frontends, utilising PostgreSQL with CQRS and Event Sourcing. The system is build using Bazel/NixOS/Buildkite and delivered to Kubernetes cluster via GitOps/AggroCD. Our team sets up new standards in desiging, implementing and testing microservices.
 - Lead a push for increase runtime awareness and improving build systems and Kubernetes deployments leading to enhancing the top 95th response time of detached services by an order of magnitude as well as improving the performance of the old monolith system in 95th percentile by a factor of five. The improvements lead to saving tens of hours for both operations as well as our end users. The research led to internal workshops and Haskell eXchange 2020 talk.
 - Advocating for and participating in the company transition from PureScript to TypeScript, as well as setting up code standards and best practises (including FE unit testing) in the team.
 - Increased the performance of Conduit pipelines fivefold by introducing concurrency guaranteeing much faster failure recovery of the mission-critical system.
