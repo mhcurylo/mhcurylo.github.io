@@ -12,14 +12,27 @@ description = "Philosophy as self help for software peoples."
 build_search_index = true
 default_language = "en"
 
+taxonomies = [{ name = "tags" }]
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
 
 [extra]
-# Put all your custom variables here
-#
+
+mode = "light"
+default_mode = "light"
+
+
+[extra.show]
+tags = true
+
+
+[extra.social]
+github = "mhcurylo"
+linkedin = "mhcurylo"
+
+
 [languages.en.translations]
 language_name = "English"
 about = "About"
