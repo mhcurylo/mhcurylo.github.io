@@ -29,10 +29,10 @@
 </head>
 
 <body>
-  <div id="sidebar" class="animated fadeInDown">
+  <div id="sidebar" >
     <div class="logo-title">
       <div class="title">
-        <img src={{ get_url(path="images/gencraft.png" ) }} style="width:200px;" alt="logo" />
+        <img src={{ get_url(path="images/gencraft.png" ) }} style="width:200px;height:200px;" alt="logo" />
         <h3><a href="{{ get_url(path="@/_index.md", lang=lang) }}">{{ config.title }}</a></h3>
         <div class="description">
           <p>{{ config.description }}</p>
@@ -92,7 +92,7 @@
     </div>
   </div>
   <div id="main">
-    <div class="page-top animated fadeInDown">
+    <div class="page-top">
       <div class="nav">
         {% set current_url_str = current_url | as_str %}
         {% set language_site_base = get_url(path="@/_index.md", lang=lang) | as_str %}
