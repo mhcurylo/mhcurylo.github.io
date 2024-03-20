@@ -5,7 +5,7 @@ date = 2024-03-19
 [taxonomies]
 tags = ["philosophy", "development", "software", "design", "epistemololgy"]
 [extra]
-summary = "Software witches learn from the broad-shouldered philospher."
+summary = "Witches! Listen to the broad-shouldered philospher."
 mathjax = "tex-mml"
 +++
 
