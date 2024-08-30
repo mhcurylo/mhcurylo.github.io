@@ -9,17 +9,27 @@ summary = "big O for the silicon multiprocessor, smoll c for the carbon witch"
 mathjax = "tex-mml"
 +++
 
-# a smoll c notation
+## A Big O notation
 
-Although every Software Witch is expected to know the Big O notation in case she gets into smoll talk with a hiring person, they rarely use it.
-The best of us keep track of the nesting of our for loops, yet it is not the loops that threaten the sanity of our minds with their intricacies. 
-The for loops wreak havoc on the silicon minds of our multiprocessors instead. 
+Every software witch keeps a pouch of Big O notation in the pocket of her skirt, just in case their microprocessor overheats or a db stalls.
+
+The pouch of Big O at hand can assist her in estimating the time complexity of her hand-woven text files. 
+It tells a witch how much the toil on the silicon increases with the growth of the input, a toil which translates into latency, a latency which causes attention lose and boredom in humans.
+
+A witch cares about humans as much as some humans care about their pets and thus tries not to cause harm of boredom by neglect. 
+
+## a smoll c notation
+
+Witches do not get ramped up by Big O as much as the silicon though.
 
 Our blood-filled lunch-stained carbon selves live, thrive, suffer and die of domain complexity. 
 
-I humbly propose a smoll c notation as a way of measuring the complexity of domains.
+Domain complexity can be loosely defined as the maximum number of pattern matches which have to be done before deciding on how to calculate the output.
 
-It is based on two basic ideas: measuring the Cardinality of simple types by ignoring the stuff with a large capital C Cardinality by assigning a smoll c cardinality of one to it and counting the smoll c cardinality of complex Algebraic Data Types algebraically.
+I propose a smoll c notation as a way of estimating the number of branches you have to cover and thus the complexity of domains.
+
+It is based on a basic idea of measuring the Cardinality of basic types by ignoring the stuff with a large capital C Cardinality by assigning a smoll c cardinality of one to it.
+All is left is counting the smoll c cardinality of complex Algebraic Data Types algebraically, just as it done for the large C Cardinality.
 
 ## The Large C Cardinality
 
@@ -30,12 +40,11 @@ For a singleton type, as in typescript `type One = 'OneOfOne'`, it is a one. For
 ## a smoll c cardinality
 
 To manage this madness a witch does not tell a number from another number or a string from a string. 
-All `numbers` and `strings` have a cardinality of one to her, a bazillion of instances mushed under a lack of comprehension.
-A witch's carbon brain works in four-bit registers, it does not handle Enum Cardinalities above sixteen. Thus she assigns the smoll c cardinality of one to them as well.
+All `numbers` and `strings` have a cardinality of one to her, a bazillion of instances mushed under a lack of comprehension. Why? Because they do not HAVE to be matched on.
 
 ## some types
 
-To assign smoll c to a type write the number of its instances or one if it is larger than sixteen (or does not fit four bits left).
+To assign smoll c to a basic type write the number of its instances or one if it is larger than sensible.
 Thus a smoll c cardinality is one for basic lanugage types except a boolean and a never. Never is never, zero not null. A boolean gets a cute little two. 
 
     // the types
@@ -48,7 +57,8 @@ Thus a smoll c cardinality is one for basic lanugage types except a boolean and 
 
 ## the enums
 
-A smoll c of an enum is the number of instances of an enum which a witch comprehends and a one for the ones which a witch does not comprehend.
+A smoll c of an enum is the number of instances of an enum.
+Why? Because it is a sum type of unit types! So we treat it as a sum of some ones.
 
     // the enums
     type Zero = never; // no instance, c of zero
@@ -56,7 +66,6 @@ A smoll c of an enum is the number of instances of an enum which a witch compreh
     type Two = 'OneOfTwo' | 'TwoOfTwo'; // two instances, co of two
     type Three = 'OneOfThree' | 'TwoOfThree' | 'ThreeOfThree'; // three instances, c of three
     type Four = 'OneOfFour' | 'TwoOfFour' | 'ThreeOfFour' | 'FourOfFour'; // four instances, c of four
-    type CountryCode = 'AFG' | 'ALB' | ... // forget it! c of one
 
 ## the algebra
 
@@ -151,12 +160,12 @@ This is yet another reason not to inline your functions. Let the compilers do it
 
 ## smoll c and code branching
 
-On a basic level, the smoll c of your function input reflects the number of branches aka pattern matches your function covers.
+On a basic level, the smoll c of your function input reflects the maximum number of branches aka pattern matches on enums / data constructors / discriminated unions your function covers. Branching in code steams from branching in data types.
 
 ## our domains 
 
 Software witches die by their domains, their database schemas and their domain functions.
-Whenever you wonder if `{ streamingURL?: string, streamingTYPE?: 'A' | 'B', streamingTOKEN?: string}` is better than `{ streaming?: { url: string, type: 'A' | 'B', token: string}` remember that the smoll c is like twelve to three and shift left.
+Whenever you wonder if `{ streamingURL?: string, streamingTYPE?: 'A' | 'B', streamingTOKEN?: string}` is better than `{ streaming?: { url: string, type: 'A' | 'B', token: string}` remember that the smoll c is like twelve to three and shift the nulls left to the parent function, the parent product datatype etc.
 All domain complexity should always be shifted left up to the entry point of the program and then ruthlessly parsed of existence.
 
 ## some fun edge cases 
@@ -164,18 +173,23 @@ All domain complexity should always be shifted left up to the entry point of the
 The proposed approximation of domain complexity has some funky edge cases which make sense.
 
     // Some edge cases
-    type lessNumbers = (a: number, b : number) => number // smoll c of one
-    type moreNumbers = (a: number, b: number, c: number, d: number) => number // smoll c of one
-    type aNumber = (a: number) => number // smoll c of one
-    type lessBools = (a: boolean, b: boolean) =>  boolean // smoll c of sixteen
-    type lessBools = (a: boolean, b: boolean, c: boolean) =>  boolean // smoll c of two hundred fifty-six
-    type aNumberAndTwoBooleans = (a: number, b: boolean, c: boolean) =>  boolean // smoll c of sixteen
-    type aNumberAndTwoBooleans = (a: number | null, b: boolean, c: boolean) =>  boolean // smoll c of two hundred fifty six
+    type LessNumbers = (a: number, b : number) => number // smoll c of one
+    type MoreNumbers = (a: number, b: number, c: number, d: number) => number // smoll c of one
+    type ANumber = (a: number) => number // smoll c of one
+    type LessBools = (a: boolean, b: boolean) =>  boolean // smoll c of sixteen
+    type LessBools = (a: boolean, b: boolean, c: boolean) =>  boolean // smoll c of two hundred fifty-six
+    type ANumberAndTwoBooleans = (a: number, b: boolean, c: boolean) =>  boolean // smoll c of sixteen
+    type ANumberAndTwoBooleans = (a: number | null, b: boolean, c: boolean) =>  boolean // smoll c of two hundred fifty six
 
 The assumption here is that some of the code does something with numbers - we do not know what and it is not interesting to a witch. It should never change, thus - let it go - smoll c of one.
-Once you put a number and two enums we can expect that the code will choose what to do with a number. This is a scary thought.
-Once you put a nullable number and two enums we can expect that the code will choose what to do with a number it can choose to create out of nothing in different ways. This is a very, very scary thought indeed.
+Once you put a number and two booleans we can expect that the code will choose what to do with a number. This is a scary thought.
+Once you put a nullable number and two booleans we can expect that the code will choose what to do with a number it can choose to create out of nothing in different ways. This is a very, very scary thought indeed.
+
+## why one for the complex stuff?
+
+I could propose more sensible mathematically constant c for complex types (number would have complexity of c as complex). At the end of the computation one could just ignore the c to the power of c as 'to large to care for'.
+Yet, the easiest way to do it in estimates is to define the constant c as one and replace it with one before even starting the computation.
 
 ## thanks!
 
-Thanks for going through the humble smoll c notation proposal I hope it will make you wonder whether that null in your product type would not look better as a non-nullable field in a freshly spun discriminated union. Enjoi your brew, witch!
+Thanks for going through the smoll c notation proposal. I hope it will make you wonder whether that null in your product type would not look better as a non-nullable field in a freshly spun discriminated union. Enjoi your brew, witch!
