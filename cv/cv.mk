@@ -1,7 +1,6 @@
-# Mateusz Curylo
+# Mika Curylo
 
-* Email: mateusz.curylo@protonmail.com
-* blog: [www.oxhouseclub.com](https://oxhouseclub.com)
+* blog: [lunch.support](https://lunch.support)
 * github: [mhcurylo](https://github.com/mhcurylo)
 * linkedin: [mhcurylo](https://www.linkedin.com/in/mhcurylo)
 
